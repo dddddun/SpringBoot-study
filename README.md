@@ -5,7 +5,7 @@
 
 
 ## 20201121
-### index.html : Welcome page
-### HelloController.java : MVC패턴, API, Template engine 에 대한 Controller
-### hello.html : 데이터를 받아서 출력
-### hello-template.html : 데이터를 받아서 기존 문장을 치환
+ index.html : Welcome page
+ HelloController.java : MVC패턴, API, Template engine 에 대한 Controller
+ hello.html : 데이터를 받아서 출력
+ hello-template.html : 데이터를 받아서 기존 문장을 치환
