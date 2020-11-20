@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
-
+    /** Controllerl를 사용한 간단한 페이지 출력 **/
     // 웹 어플리케이션에서 /hello 로 들어오면 아래의 메서드를 호출해준다.(스프링이 해줌)
    @GetMapping("hello")
     // 스프링이 모델을 만들어서 넣어줌
@@ -25,6 +25,8 @@ public class HelloController {
        // 참고) `spring-boot-devtools`라이브러리를 추가하면 `html`파일을 컴파일만 해주면 서버 재시작 없이 View파일 변경 가능
     }
 
+
+    /** get방식으로 받은 데이터로 페이지를 출력 **/
     @GetMapping("hello-mvc")
     // 외부에서 파라미터를 받아온다.
     public String helloMvc(@RequestParam(name = "name") String name, Model model) {
@@ -34,6 +36,8 @@ public class HelloController {
        return "hello-template";
     }
 
+
+    /** API (String 전달) **/
     @GetMapping("hello-string")
     // http 에서 헤더부와 바디부 중 바디부에 다음 데이터를 직접 넣어주겠다.
     // 이게 없으면 viewResolver로 넘겨 알맞는 템플릿으로 보낸다.
@@ -47,6 +51,7 @@ public class HelloController {
        return "hello " + name;
     }
 
+    /** API (객체 전달) **/
     @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name){
