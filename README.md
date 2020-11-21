@@ -4,7 +4,7 @@
 -----
 
 
-## 20201121
+## 1
  index.html : Welcome page <br />
  HelloController.java : MVC패턴, API, Template engine 에 대한 Controller <br />
  hello.html : 데이터를 받아서 출력 <br />
@@ -12,8 +12,8 @@
  
  -----
  
- ## 20201122
-  @Controller : 요청과 응답을 처리해주는 클래스에 사용된다.
-  @Autowired : 생성자나 setter메서드 없이 의존성을 주입해 자동으로 객체를 생성해준다.
-  @Service : 비지니스 로직을 담당하는 클래스에 사용된다.
-  @Repository : DB에 액세스하는 클래스에 사용된다.
+ ## 2
+  @Controller : 요청과 응답을 처리해주는 클래스에 사용된다. <br />
+  @Autowired : 생성자나 setter메서드 없이 의존성을 주입해 자동으로 객체를 생성해준다. <br />
+  @Service : 비지니스 로직을 담당하는 클래스에 사용된다. <br />
+  @Repository : DB에 액세스하는 클래스에 사용된다. <br />
