@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 // 순수 자바 클래스면 스프링이 모른다. 어노테이션을 사용해 service임을 표시해줌
-@Service
+// @Service (직접 빈을 등록하기 위해 주석처리)
 public class MemberService {
 
     private final MemberRepository memberRepository;

@@ -5,7 +5,7 @@ import woodangtang.woodangtangspring.domain.Member;
 
 import java.util.*;
 
-@Repository
+// @Repository (직접 빈을 등록하기 위해 주석처리
 public class MemoryMemberRepository implements  MemberRepository{
 
     // save를 위해 생성 <회원아이디, 값>
