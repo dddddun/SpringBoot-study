@@ -2,6 +2,7 @@ package woodangtang.woodangtangspring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import woodangtang.woodangtangspring.service.MemberService;
 
 /* 스프링 컨테이너가 스프링 참에 뜰 때, 스프링 컨테이너라는 스프링 통이 생기는데
@@ -19,5 +20,11 @@ public class MemberController {
     // 생성자.
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+    }
+
+    // 회원 등록 폼 컨트롤러
+    @GetMapping(value = "/members/new")
+    public String createForm() {
+        return "members/createMemberForm";
     }
 }
